@@ -4,7 +4,11 @@ import './index.css';
 import benjaminDowdle from './images/benjamin.jpg'
 
 const Header = () => (
-  <h1>Welcome to Day 4!</h1>
+  <div className='header'>
+    <h1>Welcome to Day 4!</h1>
+    <p>This is how I am learning React</p>
+  </div>
+  
 
 )
 
