@@ -25,3 +25,18 @@ code {
 .main{
   padding: 10px 50px;
 }
+
+.subscribe-form{
+  text-align: center;
+  background-color: rgb(96, 203, 235);
+  margin: 50px;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.subscribe-form input{
+  margin: 20px 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}

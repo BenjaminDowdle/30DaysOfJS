@@ -25,10 +25,50 @@ const Main = () => (
   
 )
 
+// Hexadecimal color generator
+const hexaColor = () => {
+  let str = '0123456789abcdef'
+  let color = ''
+  for (let i = 0; i < 6; i++) {
+    let index = Math.floor(Math.random() * str.length)
+    color += str[index]
+  }
+  return '#' + color
+}
+
+const buildSwatch = () => {
+  let i = 0
+  while(i <= 5){
+    
+    i++
+  }
+}
+
+const HexaColor = () => (
+  <div className='swatches'>
+    
+  </div>
+) 
+
+const Form = () => (
+  <div className='subscribe-form'>
+    <h2>Subscribe</h2>
+    <p>Sign up with your email address to receive news and updates.</p>
+    <form>
+      <input type="text" id="fname" name="fname" placeholder='First Name'></input>
+      <input type="text" id="lname" name="lname" placeholder='Last Name'></input>
+      <input type="email" id="email" name="email" placeholder='Email'></input>
+    </form>
+    <input type="submit" value="Subscribe"></input>
+  </div>
+)
+
 const App = () => (
   <div className='app'>
     <Header />
     <Main />
+    <HexaColor />
+    <Form />
   </div>
 )
 
