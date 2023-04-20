@@ -14,4 +14,14 @@ code {
 
 .profile-picture {
   border-radius: 50%;
+  width: 200px;
+}
+
+.header{
+  background-color: rgb(96, 203, 235);
+  padding: 10px 50px;
+}
+
+.main{
+  padding: 10px 50px;
 }
