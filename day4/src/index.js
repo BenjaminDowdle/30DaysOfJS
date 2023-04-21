@@ -21,6 +21,11 @@ const Main = () => (
     <ul>{prerequesFormatted}</ul>
     <img src={benjaminDowdle} alt='Benjamin Dowdle' className='profile-picture'></img>
     <h2>Benjamin Dowdle</h2>
+    <HexaColor />
+    <HexaColor />
+    <HexaColor />
+    <HexaColor />
+    <HexaColor />
   </div>
   
 )
@@ -36,19 +41,26 @@ const hexaColor = () => {
   return '#' + color
 }
 
-const buildSwatch = () => {
-  let i = 0
-  while(i <= 5){
-    
-    i++
-  }
-}
+// const buildSwatch = () => {
+//   let i = 0
+//   while(i <= 5){
+//     color = hexaColor
+//     <div>
+//       <h2>{color}</h2>
+//     </div>
+//     i++
+//   }
+// }
 
-const HexaColor = () => (
-  <div className='swatches'>
-    
+const HexaColor = () => {
+  const color = hexaColor()
+  return(
+  <div className='swatches' style={{'backgroundColor': color}}>
+    <h2>{color}</h2>
   </div>
-) 
+  )
+  
+} 
 
 const Form = () => (
   <div className='subscribe-form'>
@@ -67,7 +79,6 @@ const App = () => (
   <div className='app'>
     <Header />
     <Main />
-    <HexaColor />
     <Form />
   </div>
 )
